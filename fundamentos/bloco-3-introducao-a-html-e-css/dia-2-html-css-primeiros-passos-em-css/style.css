@@ -1,0 +1,36 @@
+<style>
+      h1 {
+        font-size: 65px;
+        color: orange;
+        font-family: sans-serif;
+      }
+      ul {
+        background-color: lightgreen;
+      }
+      .back_color{
+        background-color: lightyellow;
+      }
+      p {
+        font-weight: 600;
+        font-size: 3em;
+        line-height: 20px;
+      }
+      body{
+        font-size: 16px;
+        font-style: italic;
+        text-align: center;
+      }
+      .center {
+        text-align: justify;
+      }
+      .bg{
+        background-color: yellow;
+      }
+      .bgd{
+        background-color: red;
+      }
+      .bckgr{
+        background-color: brown;
+      }
+
+    </style>
