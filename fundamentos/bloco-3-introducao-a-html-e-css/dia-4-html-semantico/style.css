@@ -1,9 +1,10 @@
-h1 {
+h1, h3, {
     text-align: center;
   }
-  li {
+li {
     list-style: none;
   }
+
   
 
   .first {
@@ -34,14 +35,17 @@ h1 {
   }
 
   .premio_first {
+    display: inline;
 
   }
 
   .premio_second{
+    display: inline;
 
   }
 
   .premio_third {
-    
+    display: inline;
+
   }
   
