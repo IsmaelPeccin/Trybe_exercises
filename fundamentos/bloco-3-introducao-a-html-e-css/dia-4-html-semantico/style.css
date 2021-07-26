@@ -1,6 +1,10 @@
 h1 {
     text-align: center;
   }
+  li {
+    list-style: none;
+  }
+  
 
   .first {
     background-color: rgb(235, 200, 84);
@@ -8,6 +12,7 @@ h1 {
     height: 50px;
     text-align: center;
     width: 200px;
+    display: inline-block;
   }
 
   .second {
@@ -16,6 +21,7 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
+    display: inline-block;
   }
 
   .third {
@@ -24,4 +30,18 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
+    display: inline-block;
   }
+
+  .premio_first {
+
+  }
+
+  .premio_second{
+
+  }
+
+  .premio_third {
+    
+  }
+  
