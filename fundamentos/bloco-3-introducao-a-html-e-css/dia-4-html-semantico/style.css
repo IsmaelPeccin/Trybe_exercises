@@ -1,11 +1,13 @@
-h1, h3, {
+h1, h3 {
     text-align: center;
   }
 li {
     list-style: none;
   }
 
-  
+  .section_1 {
+    text-align: center;
+  }
 
   .first {
     background-color: rgb(235, 200, 84);
@@ -13,7 +15,7 @@ li {
     height: 50px;
     text-align: center;
     width: 200px;
-    display: inline-block;
+    
   }
 
   .second {
@@ -35,7 +37,8 @@ li {
   }
 
   .premio_first {
-    display: inline;
+    display: inline-block;
+    
 
   }
 
