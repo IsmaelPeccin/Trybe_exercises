@@ -1,0 +1,33 @@
+h1, h2, h3 {
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav {
+  font-size: large;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+table, td {
+    border: 1px solid black;
+    text-align: center;
+}
+#foto {
+  width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+aside {
+    display: inline;
+    width: 300px;
+
+}
