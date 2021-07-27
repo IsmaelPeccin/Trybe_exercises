@@ -2,18 +2,37 @@ h1, h2, h3 {
     
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+header {
+  
+  width: 1000px;
+
+  color: rgba(0, 0, 0, 0.938)
+}
+
 nav {
   font-size: large;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: inline-block;
+  width: 1000px;
+  
 
 }
-
+#article {
+  border:rgba(3, 3, 3, 0.171) 4px solid;
+  width: 1000px;
+  background-color: rgba(15, 13, 13, 0.89);
+  color: whitesmoke;
+}
+.section {
+  border: brown 4px solid;
+}
 table, td {
-    border: 1px solid black;
+    border: 2px solid whitesmoke;
     text-align: center;
+
 }
 #foto {
-  width: 200px;
+  width: 300px;
 }
 #foto_1 {
   width: 300px;
@@ -33,8 +52,13 @@ table, td {
 
 
 
-aside {
-    display: inline;
-    width: 300px;
+#aside {
+    display: inline-block;
+    width: 20%;
+    height: 200px;
+    padding: 20px;
+    border:rgba(3, 3, 3, 0.171) 4px solid;
+    background-color: rgba(15, 13, 13, 0.178);
+    font-size: x-large;
 
 }
