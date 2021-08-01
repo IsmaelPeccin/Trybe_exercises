@@ -1,4 +1,4 @@
-let notaPorcentagem = 101; 
+let notaPorcentagem = 100; 
 
 if (notaPorcentagem <0 || notaPorcentagem>100) { 
   console.log("Erro") 
