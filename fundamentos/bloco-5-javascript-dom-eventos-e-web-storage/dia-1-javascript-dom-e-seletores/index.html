@@ -42,6 +42,20 @@
       </section>
     </main>
     <script>
+        
+        function changeText() {
+            let paragrafo = document.getElementsByTagName('p')[0];
+            paragrafo.innerHTML = "Trabalhando como programador em uma boa empresa"; 
+        }
+        changeText(); 
+
+        function changeColorToGreen() {
+            let quadrado = document.getElementsByClassName('main-content')[0]; 
+            quadrado.style.background = "rgb(76,164,109)";
+        }
+        changeColorToGreen(); 
+
+        
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
