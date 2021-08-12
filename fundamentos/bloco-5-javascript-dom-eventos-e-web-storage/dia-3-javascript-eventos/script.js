@@ -22,44 +22,55 @@ function createDaysOfTheWeek() {
 
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
-  let listDays = document.getElementById('days'); 
+function criaDiasDez (){
+
+  let listDays = document.getElementById('days');
 
   for (let index2 = 0; index2 < dezDaysList.length; index2 += 1) {
     
-    let dezDay = dezDaysList[index2]; 
+    let dezDay = dezDaysList[index2];
     let numDayDez = document.createElement('li');
 
     if (dezDay === 24 || dezDay === 31) {
-      numDayDez.className = 'holiday day'; 
-      numDayDez.innerHTML = dezDay; 
-      listDays.appendChild(numDayDez); 
+      numDayDez.className = 'holiday day';
+      numDayDez.innerHTML = dezDay;
+      listDays.appendChild(numDayDez);
     }
     else if (dezDay === 4 || dezDay === 11 || dezDay === 18){
-      numDayDez.className = "friday day"; 
-      numDayDez.innerHTML = dezDay; 
-      listDays.appendChild(numDayDez); 
+      numDayDez.className = "friday day";
+      numDayDez.innerHTML = dezDay;
+      listDays.appendChild(numDayDez);
     }
     else if (dezDay === 25) {
-      numDayDez.className = 'holiday friday day'; 
-      numDayDez.innerHTML = dezDay; 
-      listDays.appendChild(numDayDez); 
+      numDayDez.className = 'holiday friday day';
+      numDayDez.innerHTML = dezDay;
+      listDays.appendChild(numDayDez);
     }
     else if (dezDay !== 25 && dezDay !== 24 && dezDay !== 31 && dezDay !== 4 && dezDay !== 11 && dezDay !== 18) {
       numDayDez.className = 'day';
       numDayDez.innerHTML = dezDay;
       listDays.appendChild(numDayDez); 
-    } 
-
-    
-
-
-
-
-
-
-
-
+    }
   }
+}
+criaDiasDez ();   
+
+  //Exercício 2 
+  //Implemente uma função que receba como parâmetro a string "Feriados" e crie dinamicamente um botão com o nome "Feriados".
+  //Adicione a este botão a ID "btn-holiday" .
+  //Adicione este botão como filho/filha da tag <div> com classe "buttons-container"
+ 
+  function createButtonHoliday(buttonName) {
+
+    let divButtons = document.querySelector(".buttons-container");
+    let buttonHoliday = document.createElement('button'); 
+
+    buttonHoliday.id = "btn-holiday";
+    buttonHoliday.innerText = buttonName;
+    divButtons.appendChild(buttonHoliday); 
+  }
+  createButtonHoliday('Feriados');
+
 
 
 
