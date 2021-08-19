@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastre seu currículo</h1>
+    </header>
+    <form action="" method="GET">  
+        <fieldset class="dadospessoais">
+            <label for="nome-completo">Nome:</label>
+            <input type="text" name="nome" id="nome-completo" maxlength="40" required>
+            <br><br>
+            <label for="e-mail" >e-mail:</label>
+            <input type="email" name="email" id="e-mail" maxlength="50" required>
+            <br><br>
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" maxlength="11" required>
+            <br><br>
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="end" id="edereco" maxlength="200" required>
+            <br><br>
+            <label for="cid">Cidade:</label>
+            <input type="text" name="city" id="cid" maxlength="28" required>
+            <br><br>
+            <label for="est">Estado:</label>
+            <select name="estado" id="est"></select>
+            <br><br>
+            <p>Tipo:</p>
+            <input type="radio" name="tipo" id="casa" value="Casa">
+            <label for="casa">Casa</label><br>
+            <input type="radio" name="tipo" id="apartamento" value="Apartamento">
+            <label for="apartamento">Apartamento</label>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
