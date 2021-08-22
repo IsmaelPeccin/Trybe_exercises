@@ -1,5 +1,5 @@
 function createDaysOfTheWeek() {
-    const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
+    const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta','Sábado']
     const weekDaysList = document.querySelector('.week-days');
   
     for (let index = 0; index < weekDays.length; index += 1) {
@@ -10,7 +10,7 @@ function createDaysOfTheWeek() {
       weekDaysList.appendChild(dayListItem);
     };
   };
-  
+
   createDaysOfTheWeek();
   
   // Escreva seu código abaixo.
@@ -115,11 +115,12 @@ criaDiasDez ();
   // Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto exibido nos dias que são Sexta-feira.
   //É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias.
 
-  function clickFriday (array) {
+  function clickFriday () {
 
-    let buttonFriday = document.querySelector('#btn-friday'); 
-    let allFridays = document.querySelectorAll('.friday'); 
-    let setText = 'Sextou!!'; 
+    let buttonFriday = document.querySelector('#btn-friday');
+    let allFridays = document.getElementsByClassName('friday');
+    let setText = 'Sextou!!';
+    let arrayFri = [4, 11, 18, 25];
 
     buttonFriday.addEventListener('click', function(){
       for (let index4 = 0; index4 < allFridays.length; index4 += 1) {
@@ -127,26 +128,11 @@ criaDiasDez ();
           allFridays[index4].innerHTML = setText;
         }
         else {
-          allfridays[index4].innerHTML = array[index4]; 
+          allFridays[index4].innerHTML = arrayFri[index4];
         }
+
       }
     });
   }
-  let fridaysDez = [4, 11, 18, 25]; 
-  clickFriday(fridaysDez);
-
-
-    
-    
-    
-
   
-
-
-
-
-
-
-
-
-  
+  clickFriday();
