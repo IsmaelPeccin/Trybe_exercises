@@ -136,3 +136,27 @@ criaDiasDez ();
   }
   
   clickFriday();
+
+  // Exercício 5 
+  //Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
+
+  function mouseOver() {
+
+    let allDays = document.getElementById('days');
+
+    allDays.addEventListener('mouseover', function(event){
+      event.target.style.fontSize = '30px';
+      event.target.style.fontWeigth = '400';
+    });
+  }
+
+  function mouseOut(){
+
+    let allDays = document.getElementById('days');
+    allDays.addEventListener('mouseout', function(event){
+      event.target.style.fontSize = '20px';
+      event.target.style.fontWeigth = '200';
+    });  
+  }
+  mouseOver(); 
+  mouseOut();
