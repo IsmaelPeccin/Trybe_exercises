@@ -50,3 +50,10 @@
 
   console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`);
 
+  let n = 4;
+  for (let index = 1; index < n; index +=1) {
+    n = n*index;
+  }
+  console.log(n);
+
+
