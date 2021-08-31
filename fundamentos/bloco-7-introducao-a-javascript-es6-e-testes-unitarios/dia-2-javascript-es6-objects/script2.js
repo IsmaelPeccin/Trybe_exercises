@@ -25,6 +25,11 @@ const addTurno = (obj, key, value) => {
 addTurno(lesson2, 'turno', 'manhã');
 console.log(lesson2);
 
+//2.Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
+const objKeys = (obj) =>{
+  return Object.keys(obj); 
+}
+console.log(objKeys(lesson2));
 
 
 
