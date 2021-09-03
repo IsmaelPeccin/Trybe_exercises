@@ -4,7 +4,7 @@ const check = (yourNumber, generatorNumber) => {
   if (yourNumber === generatorNumber) {
     return `${yourNumber} = ${generatorNumber}\nParabéns você ganhou`; 
   } else {
-    return `${yourNumber} = ${generatorNumber} ?\nTente novamente`;
+    return `${yourNumber} = ${generatorNumber}\nTente novamente`;
   }
 }
 const generatorNumber = () => Math.floor(Math.random() * 5 +1);
