@@ -4,6 +4,9 @@
 const assert = require('assert');
 
 // escreva greet abaixo
+const greet = (person, greeting = 'Hi') => 
+`${greeting} ${person}`;
+console.log(greet('John'));
 
 assert.strictEqual(greet('John'), 'Hi John');
 assert.strictEqual(greet('John', 'Good morning'), 'Good morning John');
