@@ -19,7 +19,6 @@ const greet = (temperature) =>
 const sendMarsTemperature = (onSucess) => {
   const temperatureAtual = getMarsTemperature();
   setTimeout(() => onSucess(temperatureAtual), messageDelay);
-
 }
 
 sendMarsTemperature(temperatureInFahrenheit); // imprime "It is currently 47ºF at Mars", por exemplo
