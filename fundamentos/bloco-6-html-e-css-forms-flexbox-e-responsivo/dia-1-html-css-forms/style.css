@@ -1,0 +1,18 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    
+}
+header {
+    text-align: center;
+}
+
+.dadospessoais, header, .fieldcv, .button {
+    margin: 0px auto;
+    width: 60%; 
+}
