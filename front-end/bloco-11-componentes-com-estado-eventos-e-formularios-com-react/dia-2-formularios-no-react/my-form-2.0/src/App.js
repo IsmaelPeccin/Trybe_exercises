@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css';
+import Form from './Form';
+
 
 const initialState = {
   name: '',
@@ -19,9 +20,10 @@ class App extends React.Component {
 
 
   render() {
-    return
+    return (
+      <Form />
+    )
   }
-
 }
 
 export default App;
