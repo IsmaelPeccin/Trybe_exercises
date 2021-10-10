@@ -8,6 +8,14 @@ class Form extends React.Component {
       <form>
         <PersonalForm />
         <ProfessionalForm />
+        <input 
+          type="button"
+          value="enviar"
+        />
+        <input 
+          type="button"
+          value="Limpar"
+        />
       </form>
     )
   }
