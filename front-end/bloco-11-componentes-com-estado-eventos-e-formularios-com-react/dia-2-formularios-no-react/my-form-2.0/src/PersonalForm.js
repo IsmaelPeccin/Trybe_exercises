@@ -12,6 +12,7 @@ class PersonalForm extends React.Component {
       <fieldset>
           <legend>Informações Pessoais</legend>
             <div>
+              Nome
                 <input  
                   type="name"
                   name="name"
@@ -20,6 +21,7 @@ class PersonalForm extends React.Component {
                 />
             </div>
             <div>
+              Email
                 <input  
                   type="email"
                   name="email"
@@ -28,6 +30,7 @@ class PersonalForm extends React.Component {
                 />           
             </div>
             <div>
+              CPF
                 <input  
                   type="number"
                   name="CPF"
@@ -36,6 +39,7 @@ class PersonalForm extends React.Component {
                 />      
             </div>
             <div>
+              Endereço
                 <input  
                   type="text"
                   name="adress"
@@ -44,6 +48,7 @@ class PersonalForm extends React.Component {
                 />      
             </div>
             <div>
+              Cidade
                 <input  
                   type="text"
                   name="city"
@@ -52,6 +57,7 @@ class PersonalForm extends React.Component {
                 />      
             </div>
             <div>
+              Estado
                 <select 
                   name="statesCountry"
                   required
