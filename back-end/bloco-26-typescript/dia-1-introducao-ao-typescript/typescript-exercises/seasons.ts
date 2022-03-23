@@ -4,3 +4,4 @@ enum seasonsOfYear {
   Spring = 'Spring',
   Summer = 'Summer',
 }
+export default seasonsOfYear;
