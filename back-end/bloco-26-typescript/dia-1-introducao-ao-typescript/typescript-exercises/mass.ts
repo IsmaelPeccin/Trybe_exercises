@@ -1,15 +1,9 @@
-const errorMass = require('./error');
+import convertGlobal from "./convertGlobal";
 
-const massUnits = ["kg", "hg", "dag", "g", "dg", "cg", "mg"];
 
-function massConvert(value: number, forUnity: string, toUnity: string): number {
+const units = ["kg", "hg", "dag", "g", "dg", "cg", "mg"];
 
-  if (!massUnits.includes(forUnity)) errorMass(forUnity); 
-  if (!massUnits.includes(toUnity)) errorMass(toUnity); 
+function convert(value: number, forUnity: string, toUnity: string): number {
 
-  const forIndex = units.indexOf(forUnity); 
-  const toIndex = units.indexOf(toUnity); 
-  const exponent = (toIndex - forIndex);
-
-  return value * Math.pow(10, exponent);
+  return convertGlobal.convert(units, value, forUnity, toUnity);
 }

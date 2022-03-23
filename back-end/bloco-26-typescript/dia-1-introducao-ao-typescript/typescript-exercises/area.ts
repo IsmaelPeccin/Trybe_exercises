@@ -1,15 +1,8 @@
-const errorArea = require('./error');
+import convertGlobal from "./convertGlobal";
 
-const areaUnits = ["km²", "hm²", "dam²", "m²", "dm²", "cm²", "mm²"];
+const units = ["km", "hm", "dam", "m", "dm", "cm", "mm"];
 
-function areaConvert(value: number, forUnity: string, toUnity: string): number {
+function convert(value: number, forUnity: string, toUnity: string): number {
 
-  if (!areaUnits.includes(forUnity)) errorArea(forUnity); 
-  if (!areaUnits.includes(toUnity)) errorArea(toUnity); 
-
-  const forIndex = units.indexOf(forUnity); 
-  const toIndex = units.indexOf(toUnity); 
-  const exponent = (toIndex - forIndex);
-
-  return value * Math.pow(10, exponent);
+    return convertGlobal.convert(units, value, forUnity, toUnity);
 }
