@@ -1,10 +1,8 @@
+const error = require('./error');
+
 const units = ["km", "hm", "dam", "m", "dm", "cm", "mm"];
 
-function error(unity: string) {
-  throw new Error(`A unidade ${unity} não é uma unidade válida.`)
-}
-
-function convert(value: number, forUnity: string, toUnity: string): number {
+function lengthConvert(value: number, forUnity: string, toUnity: string): number {
 
   if (!units.includes(forUnity)) error(forUnity); 
   if (!units.includes(toUnity)) error(toUnity); 
