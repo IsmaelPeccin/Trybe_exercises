@@ -1,0 +1,34 @@
+import { Car, Color, Directions, Doors } from "./car";
+
+const gol = new Car('Volkswagen', 4, Color.SILVER );
+
+gol.openTheDoor(Doors.DRIVER);
+gol.closeTheDoor(Doors.DRIVER);
+gol.turnOn();
+gol.speedUp();
+gol.speedDown();
+gol.turn(Directions.LEFT);
+gol.speedUp();
+gol.speedDown();
+gol.turn(Directions.RIGHT);
+gol.speedUp();
+gol.speedDown();
+gol.turn(Directions.RIGHT);
+gol.speedDown();
+gol.stop();
+gol.openTheDoor(Doors.BEHIND_RIDE);
+gol.closeTheDoor(Doors.BEHIND_RIDE);
+gol.speedUp();
+gol.speedDown();
+gol.turn(Directions.RIGHT);
+gol.speedUp();
+gol.speedDown();
+gol.turn(Directions.LEFT);
+gol.speedUp();
+gol.speedDown();
+gol.turn(Directions.RIGHT);
+gol.speedDown();
+gol.stop();
+gol.openTheDoor(Doors.BEHIND_RIDE);
+gol.closeTheDoor(Doors.BEHIND_RIDE);
+gol.speedUp();
