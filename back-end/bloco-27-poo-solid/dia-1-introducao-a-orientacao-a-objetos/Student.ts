@@ -54,11 +54,28 @@ class Student {
   
   
  
- public set worksGrade(v : number[]) {
-   if (v.length > 2) {
-     throw new Error('A pessoa estudante só pode possuir 2 notas de trabalho.');
+  public set worksGrade(v : number[]) {
+    if (v.length > 2) {
+      throw new Error('A pessoa estudante só pode possuir 2 notas de trabalho.');
+    }
+    this._worksGrade = v;
   }
-   this._worksGrade = v;
- }
+
+  sumNotes(): number {
+    return [...this.examsGrade, ...this.worksGrade]
+        .reduce((previousValue, currentValue) => {
+            currentValue += previousValue;
+
+            return currentValue;
+        }, 0);
+  }
+
+    averageNotes(): number {
+      const sumNotes = this.sumNotes();
+      const divider = this.examsGrade.length + this.worksGrade.length;
+
+    return Math.round(sumNotes / divider);
+  }
+
 }
 
